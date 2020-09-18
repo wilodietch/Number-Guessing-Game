@@ -24,4 +24,9 @@ while still_playing == True:
         playerNum = int(input("Enter a number between 0-20:   "))
         print(playerNum)
 
+        if playerNum > computerNum:
+            print("Your number is too big!")
+            tries -= 1
+            print("You have " + str(tries) + " tries left. " )
+
 
