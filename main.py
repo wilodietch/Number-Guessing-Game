@@ -36,21 +36,21 @@ while still_playing == True:
             print("You guessed the correct number!")
             win = True
             break
-        if win == True:
+    if win == True:
             print("Congratulations! You won at " + str(6-tries) + " tries")
-        else: 
+    else: 
             print("No more tries")
             print("The number was: " + str(computerNum))
 
-        answer = input("Do you want to play again? Y or N? ")
+    answer = input("Do you want to play again? Y or N? ")
 
         #create a conditional to assess what happens if the player entered Y or N.
 
-        if answer.upper() == "N":
+    if answer.upper() == "N":
             print(answer)
             print("Okay! byeee ")
             still_playing = False
-        else:
+    else:
             win = False
             tries = 5
             computerNum = random.randint(0,20)
